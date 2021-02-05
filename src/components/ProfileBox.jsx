@@ -21,6 +21,7 @@ function ProfileBox(props) {
             <h1>{props.name}</h1> 
             <h3>{props.phone}</h3> 
             <div>
+            <h1>{props.name.split(" ")[0]}'s posts</h1> 
                 <h1>Showing {posts.length} result(s)</h1>
                 {posts.length > 0 && posts.map((post) => (
                     // <PostBox key={post.id} {...post}/>
