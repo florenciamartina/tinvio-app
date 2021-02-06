@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import ProfilePreview from './ProfilePreview';
+import ProfilePreview from './components/ProfilePreview';
 
 function Home({users}) {
 

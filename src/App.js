@@ -5,7 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 import ProfileBox from './components/ProfileBox'
-import Home from './components/Home'
+import Home from './Home'
 
 function App() {
 
@@ -24,10 +24,10 @@ function App() {
 
   return (
     <Router>
+      <Route exact path="/profile/:userId" component={ProfileBox} />
       <Route exact path="/">
         <Home users={users}/>
       </Route>
-      <Route exact path="/profile/:userId" component={ProfileBox} />
       
     </Router>
   );
