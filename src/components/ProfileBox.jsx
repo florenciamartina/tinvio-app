@@ -35,6 +35,7 @@ function ProfileBox() {
     
     
     return (
+
         isLoading == true 
             ? <div>Loading</div>
             : <>
@@ -52,7 +53,6 @@ function ProfileBox() {
                         <div class="info">
                             <img src={categoryLogo} class="small-icon"></img>
                             {user?.company?.bs.split(" ").length > 0 && user?.company?.bs.split(" ").map((bs) => (
-                                // <PostBox key={post.id} {...post}/>
                                 <h3 class="info-details-bs">
                                     {bs}
                                 </h3> 
@@ -69,7 +69,6 @@ function ProfileBox() {
 
                 <div class="card">
                     <h1 class="post-name">{user?.name?.split(" ")[0]}'s posts</h1>
-                    {/* <h1 class="post-name">lol's posts</h1> */}
                     <div class="posts-container">
                         <Posts userId={userId}></Posts>
                     </div> 

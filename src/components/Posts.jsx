@@ -7,9 +7,9 @@ function Posts({userId}) {
     const [posts, setPosts] = useState([]);
 
     const getPosts = async () => {
-        fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
-        .then((res) => res.json())
-        .then(json => setPosts(json))
+        const response = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`);
+        const data = await response.json();
+        setPosts(data);
         console.log("posts", posts);
         console.log("posts id", userId);
     };

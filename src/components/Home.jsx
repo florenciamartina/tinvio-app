@@ -12,7 +12,7 @@ function Home({users}) {
 
     return (
         <div className="users-container ">
-            <p>{users.length} user(s)</p>
+            <h3 className="post-length">Showing {users.length} user(s)</h3>
             {users.length > 0 && users.map((user) => (
                 <Link to ={{pathname: `/profile/${user.id}`, query: {userId: `${user.id}`}}}>
                     <ProfilePreview key={user.id} {...user}/>
