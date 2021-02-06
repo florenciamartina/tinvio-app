@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/tinvio-app/static/css/main.08ee0de1.chunk.css",
-    "main.js": "/tinvio-app/static/js/main.6aa0527e.chunk.js",
-    "main.js.map": "/tinvio-app/static/js/main.6aa0527e.chunk.js.map",
+    "main.js": "/tinvio-app/static/js/main.7a166a57.chunk.js",
+    "main.js.map": "/tinvio-app/static/js/main.7a166a57.chunk.js.map",
     "runtime-main.js": "/tinvio-app/static/js/runtime-main.1c7f71a9.js",
     "runtime-main.js.map": "/tinvio-app/static/js/runtime-main.1c7f71a9.js.map",
-    "static/js/2.972f2076.chunk.js": "/tinvio-app/static/js/2.972f2076.chunk.js",
-    "static/js/2.972f2076.chunk.js.map": "/tinvio-app/static/js/2.972f2076.chunk.js.map",
+    "static/js/2.e6e39dad.chunk.js": "/tinvio-app/static/js/2.e6e39dad.chunk.js",
+    "static/js/2.e6e39dad.chunk.js.map": "/tinvio-app/static/js/2.e6e39dad.chunk.js.map",
     "static/js/3.6a227004.chunk.js": "/tinvio-app/static/js/3.6a227004.chunk.js",
     "static/js/3.6a227004.chunk.js.map": "/tinvio-app/static/js/3.6a227004.chunk.js.map",
     "index.html": "/tinvio-app/index.html",
     "static/css/main.08ee0de1.chunk.css.map": "/tinvio-app/static/css/main.08ee0de1.chunk.css.map",
-    "static/js/2.972f2076.chunk.js.LICENSE.txt": "/tinvio-app/static/js/2.972f2076.chunk.js.LICENSE.txt",
+    "static/js/2.e6e39dad.chunk.js.LICENSE.txt": "/tinvio-app/static/js/2.e6e39dad.chunk.js.LICENSE.txt",
     "static/media/icon-24-phone.31d6cfe0.svg": "/tinvio-app/static/media/icon-24-phone.31d6cfe0.svg",
     "static/media/icon-24-shop.0fd1287d.svg": "/tinvio-app/static/media/icon-24-shop.0fd1287d.svg",
     "static/media/image.fc5db958.jpg": "/tinvio-app/static/media/image.fc5db958.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1c7f71a9.js",
-    "static/js/2.972f2076.chunk.js",
+    "static/js/2.e6e39dad.chunk.js",
     "static/css/main.08ee0de1.chunk.css",
-    "static/js/main.6aa0527e.chunk.js"
+    "static/js/main.7a166a57.chunk.js"
   ]
 }
