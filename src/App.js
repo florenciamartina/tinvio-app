@@ -1,21 +1,45 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch
 } from 'react-router-dom';
-import Profile from './components/Profile'
 import Posts from './components/Posts'
+import ProfileBox from './components/ProfileBox'
+import Home from './components/Home'
 
 function App() {
+
+    const [users, setUsers] = useState([]);
+    
+    const getUsers = async () => {
+        fetch(`https://jsonplaceholder.typicode.com/users`)
+        .then(response => response.json())
+        .then(json => setUsers(json));
+        console.log(users);
+    };
+     
+    useEffect(() => {
+        getUsers();
+    }, []);
+
+
   return (
     <Router>
-      <Router exactpath="/profile">
-        <Profile/>
+      <Switch>
+      <Router exact path="/">
+        <Home users={users}/>
       </Router>
-      <Router exactpath="/posts">
-        <Posts/>
+
+      <Router path="/user">
+        <ProfileBox/>
       </Router>
+      <Router path="/:userId">
+        <ProfileBox />
+      </Router>
+      </Switch>
+      
     </Router>
   );
 }

@@ -1,7 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 body {
-  margin: 0;
+  /* margin-left: 2rem; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,6 +17,150 @@ code {
     monospace;
 }
 
-profile {
-  font-family: 'Inter', sans-serif;
+
+.profile {
+  margin:2rem;
 }
+
+.post-box {
+  margin-top: 1rem;
+  width: 85%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Inter', sans-serif;
+  border-style: solid;
+  border-color: #d1d1d1;
+  border-width:2px;
+  border-radius: 10px;
+}
+
+.post-length {
+  font-family: 'Inter', sans-serif;
+  color: #6e6e6e;
+  font-weight:800;
+  margin-left: 1rem;
+}
+
+.post-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size:14px;
+
+}
+
+.post-body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #6e6e6e;
+  font-size:12px;
+}
+
+.info-details {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 2rem;
+  font-size:4wv;
+
+}
+
+.info {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.info-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size:10wv;
+}
+
+.post-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  font-size:6wv;
+
+}
+
+.small-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.header-img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: -15% 0 0 0;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 45%;
+  height: 80%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.posts-container {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 10% 10% 10%;
+  /* position: relative; */
+ 
+}
+
+.outer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  position: absolute;
+}
+
+.post-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  transition: .3s;
+
+}
+
+@media screen and (max-width: 800px) {
+  .card, .profile{
+    width: fit-content; /* The width is 100%, when the viewport is 800px or smaller */
+    height: fit-content;
+    overflow: scroll;
+  }
+}
+
+/* .post-writing {
+  margin: 0 3vw;
+  width: 25vw;
+  height: 100%;
+  flex-shrink: 0;
+  padding: 2vw;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  box-shadow: 4px 4px 0 rgba(0,0,0,.1);
+  
+  &-title {
+    transition: .3s;
+    text-align: center;
+    margin: 2vw 0 0;
+    opacity: 0;
+    transform: scale(.7);
+  }
+} */

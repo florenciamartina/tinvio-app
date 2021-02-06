@@ -4,8 +4,9 @@ import PostBox from './PostBox'
 
 
 
-function Posts(userID) {
+function Posts(userId) {
     const [posts, setPosts] = useState([]);
+    const userID = 1;
 
     const getPosts = () => {
         fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userID}`)
@@ -19,7 +20,7 @@ function Posts(userID) {
 
     return (
         <div>
-            <h1>Showing {posts.length} result(s)</h1>
+            <h3 class="post-length">Showing {posts.length} result(s)</h3>
             {posts.length > 0 && posts.map((post) => (
                 // <PostBox key={post.id} {...post}/>
                 <PostBox key={post.id} {...post}/>

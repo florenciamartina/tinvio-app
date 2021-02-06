@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 
 function PostBox(props) {
     return (
-        <div>
-            <h2>{props.title}</h2>
-            <p>{props.body}</p>
+        <div class="post-box">
+            <h2 class="post-title">{props.title}</h2>
+            <p class="post-body">{props.body}</p>
         </div>
     )
 }
