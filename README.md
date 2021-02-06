@@ -13,4 +13,4 @@ To run the application, simply click this [link](https://tinvio-app.herokuapp.co
   3. The website is mobile-responsive
   4. The website is hosted on Heroku
   
-**Constraints : the phone icon is broken (XML parsing error)**
+**Constraints : The phone icon was found to be broken (XML parsing error), thus it doesn't load on the website.**
