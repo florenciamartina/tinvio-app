@@ -37,7 +37,7 @@ function ProfileBox() {
     return (
 
         isLoading == true 
-            ? <div>Loading</div>
+            ? <div class="loading">Loading ...</div>
             : <>
                 <div class="outer">
                 <div class="card">

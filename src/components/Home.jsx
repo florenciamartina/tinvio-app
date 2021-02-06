@@ -1,11 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {Link, Redirect, useHistory} from 'react-router-dom';
-import {
-    BrowserRouter as Router,
-    Route,
-    Switch
-  } from 'react-router-dom';
-import ProfileBox from './ProfileBox'
+import React from 'react';
+import {Link} from 'react-router-dom';
 import ProfilePreview from './ProfilePreview';
 
 function Home({users}) {

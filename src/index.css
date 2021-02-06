@@ -182,6 +182,11 @@ code {
 
 }
 
+.loading {
+  align-self: center;
+  font-weight: 900;
+}
+
 @media screen and (max-width: 950px) {
   .card, .profile{
     width: fit-content; /* The width is 100%, when the viewport is 800px or smaller */
