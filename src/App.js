@@ -28,14 +28,6 @@ function App() {
         <Home users={users}/>
       </Route>
       <Route exact path="/profile/:userId" component={ProfileBox} />
-
-      {/* <Router exact path="/profile">
-        <ProfileBox/>
-      </Router> */}
-
-      {/* <Route 
-        path="/:userId"
-      component={ProfileBox}/> */}
       
     </Router>
   );
