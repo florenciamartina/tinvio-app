@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import PostBox from './PostBox'
-// import { client as fetch } from '../fetchutils';
 
 
 
-function Posts(userId) {
+function Posts({userId}) {
     const [posts, setPosts] = useState([]);
-    const userID = 1;
 
-    const getPosts = () => {
-        fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userID}`)
+    const getPosts = async () => {
+        fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
         .then((res) => res.json())
         .then(json => setPosts(json))
+        console.log("posts", posts);
+        console.log("posts id", userId);
     };
 
     useEffect(() => {

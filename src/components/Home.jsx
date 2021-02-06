@@ -11,10 +11,10 @@ import ProfilePreview from './ProfilePreview';
 function Home({users}) {
 
     return (
-        <div>
+        <div className="users-container ">
             <p>{users.length} user(s)</p>
             {users.length > 0 && users.map((user) => (
-                <Link to = {`users/${user.id}`}>
+                <Link to ={{pathname: `/profile/${user.id}`, query: {userId: `${user.id}`}}}>
                     <ProfilePreview key={user.id} {...user}/>
                 </Link>
             ))} 

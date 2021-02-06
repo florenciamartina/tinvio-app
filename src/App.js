@@ -3,9 +3,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  Switch
 } from 'react-router-dom';
-import Posts from './components/Posts'
 import ProfileBox from './components/ProfileBox'
 import Home from './components/Home'
 
@@ -14,31 +12,30 @@ function App() {
     const [users, setUsers] = useState([]);
     
     const getUsers = async () => {
-        fetch(`https://jsonplaceholder.typicode.com/users`)
-        .then(response => response.json())
-        .then(json => setUsers(json));
-        console.log(users);
+        const response = await fetch(`https://jsonplaceholder.typicode.com/users`);
+        const data = await response.json();
+        setUsers(data);
+        console.log("users", users);
     };
      
     useEffect(() => {
         getUsers();
     }, []);
 
-
   return (
     <Router>
-      <Switch>
-      <Router exact path="/">
+      <Route exact path="/">
         <Home users={users}/>
-      </Router>
+      </Route>
+      <Route exact path="/profile/:userId" component={ProfileBox} />
 
-      <Router path="/user">
+      {/* <Router exact path="/profile">
         <ProfileBox/>
-      </Router>
-      <Router path="/:userId">
-        <ProfileBox />
-      </Router>
-      </Switch>
+      </Router> */}
+
+      {/* <Route 
+        path="/:userId"
+      component={ProfileBox}/> */}
       
     </Router>
   );

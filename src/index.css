@@ -20,6 +20,25 @@ code {
 
 .profile {
   margin:2rem;
+  overflow: hidden;
+}
+
+.users-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profile-button {
+  border:1px solid gray;
+  border-radius:7%;
+  font-size:0.875;
+  word-wrap: break-word;
+  width: 100%; 
+  max-width: 100%;
+  float:none;
+  display: block;
 }
 
 .post-box {
@@ -48,6 +67,13 @@ code {
 
 }
 
+.preview-name{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size:20px;
+
+}
+
 .post-body {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
@@ -61,18 +87,31 @@ code {
   margin: 0;
   margin-left: 2rem;
   font-size:4wv;
-
 }
+
+.info-details-bs {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 2rem;
+  font-size:4wv;
+  padding-right: 1rem;
+  border-right: 0.5px solid;
+}
+
+.info-details-bs:last-child { border-right: none; }
 
 .info {
   display: flex;
   margin-top: 1rem;
+  font-size:1.5vw;
 }
 
 .info-name {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size:10wv;
+  margin-top:0;
 }
 
 .post-name {
@@ -104,6 +143,7 @@ code {
   text-align: center;
   align-items: center;
   overflow: auto;
+  border-radius: 0.5rem;
 }
 
 .posts-container {
@@ -133,34 +173,14 @@ code {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .card, .profile{
     width: fit-content; /* The width is 100%, when the viewport is 800px or smaller */
     height: fit-content;
     overflow: scroll;
   }
-}
 
-/* .post-writing {
-  margin: 0 3vw;
-  width: 25vw;
-  height: 100%;
-  flex-shrink: 0;
-  padding: 2vw;
-  box-sizing: border-box;
-  position: relative;
-  border-radius: 3px;
-  border: 2px solid #000;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  box-shadow: 4px 4px 0 rgba(0,0,0,.1);
-  
-  &-title {
-    transition: .3s;
-    text-align: center;
-    margin: 2vw 0 0;
-    opacity: 0;
-    transform: scale(.7);
+  .info {
+    font-size: 3vw;
   }
-} */
+}
