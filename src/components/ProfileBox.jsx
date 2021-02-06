@@ -60,9 +60,11 @@ function ProfileBox() {
                         </div>
                         <div class="info">
                             <img src={shopLogo} class="small-icon"></img>
-                            <h3 class="info-details">{user?.address?.street},&nbsp; 
-                            {user?.address?.city}, &nbsp;
-                            {user?.address?.zipcode}</h3> 
+                            <h3 class="info-details-bs">
+                                {user?.address?.street},&nbsp; 
+                                {user?.address?.suite}, &nbsp;
+                                {user?.address?.city}
+                            </h3> 
                         </div>
                     </div>
                 </div>

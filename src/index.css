@@ -98,22 +98,25 @@ code {
   font-size:4wv;
 }
 
+
 .info-details-bs {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   margin: 0;
-  margin-left: 2rem;
-  font-size:4wv;
-  padding-right: 1rem;
+  margin-left: 1rem;
+  font-size:2wv;
+  padding-right: 0.5rem;
   border-right: 0.5px solid;
 }
 
+.info-details-bs:first-of-type { margin-left:2rem; }
 .info-details-bs:last-child { border-right: none; }
 
 .info {
   display: flex;
   margin-top: 1rem;
   font-size:1.5vw;
+  padding-right: 1.5rem;
 }
 
 .info-name {
